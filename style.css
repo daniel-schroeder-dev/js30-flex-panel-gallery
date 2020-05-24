@@ -65,10 +65,25 @@ body {
 
 .panel p:first-child {
   transform: translateY(-500px);
+  margin-bottom:  50px;
 }
 
 .panel p:last-child {
   transform: translateY(500px);
+  margin-top: 50px;
+}
+
+.panel.active p:last-child,
+.panel.active p:first-child {
+  transform:  translateY(0);
+}
+
+.panel.active p:nth-child(2) {
+  transform:  scale(1.5);
+}
+
+.panel.active {
+  flex-grow: 4;
 }
 
 .panel p:nth-child(2) {
